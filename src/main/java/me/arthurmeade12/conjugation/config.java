@@ -41,7 +41,7 @@ public class config {
   }
   static boolean createprops() {
     // returns success
-    msg.warn("Downloading default config at " + config.values.configfile + ".");
+    msg.warn("Downloading default config at " + config.values.configfile + " in your PWD.");
     try {
       URL remote = new URL(config.values.url);
       ReadableByteChannel rbc = Channels.newChannel(remote.openStream());
